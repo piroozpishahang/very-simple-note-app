@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  width: 240px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h1 {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+
+.new-note {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.notes {
+  margin-top: 20px;
+}
+
+.note-item {
+  width: 100%;
+  padding: 8px;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.editor {
+  flex: 1;
+}
+
+.editor textarea {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  border: 0;
+  outline: none;
+  resize: none;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.7;
+}
